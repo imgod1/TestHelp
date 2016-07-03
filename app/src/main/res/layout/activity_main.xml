@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout  android:layout_width="match_parent"
+<!--<AbsoluteLayout  android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/llayout_main"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">-->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
 
@@ -57,6 +57,18 @@
                 android:layout_alignParentLeft="true"
                 />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+           <View
+               android:id="@+id/v_test"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:background="@color/colorAccent"
+               android:layout_centerInParent="true"></View>
+        </RelativeLayout>
+
     </LinearLayout>
 
-</AbsoluteLayout>
+<!--</AbsoluteLayout>-->

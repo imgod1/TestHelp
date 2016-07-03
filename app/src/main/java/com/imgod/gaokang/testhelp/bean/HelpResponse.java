@@ -17,7 +17,7 @@ public class HelpResponse {
 
     /**
      * code : 0000
-     * data : {"helpList":[{"uid":"1bf3cnemitfy6dnlsfk8","controlName":"下拉列表","controlType":4,"locationMode":0,"locationData":"","controlValue":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"3c7ul173h753wvsrradd","message":"哈哈哈哈 修改","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701140839_icon_setting.png"}},{"uid":"242nrr77zqy0p17uobyt","controlName":"下拉列表","controlType":4,"locationMode":0,"locationData":"","controlValue":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"1ik5femcd4pxseok06ja","message":"哈哈哈哈","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/Koala.jpg"}},{"uid":"3uhxjdza77x8vlvqkag6","controlName":"下拉列表","controlType":4,"locationMode":0,"locationData":"","controlValue":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"k8yyiv0ufyfy28vi29z4","message":"哈哈哈哈 修改","voicePath":""}},{"uid":"iighiz4322hxab3ch4rn","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"新增库存","viewindex":0,"customId":"","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"j9to52bye71hs48xnxw6","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"hhh","viewindex":-1,"customId":"","helpInfo":{"helpId":"y2i1ywmgbjqpu49om4yn","message":"hhh","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701120353_icon_share.png"}},{"uid":"kaczpph89ff9bsupy4vd","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"hhh ","viewindex":-1,"customId":"","helpInfo":{"helpId":"s0ule314tiarg1alonhw","message":"dd ","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701120304_icon_share.png"}},{"uid":"mpb7harr82cad5lgeiwj","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"我是谁","viewindex":-1,"customId":"","helpInfo":{"helpId":"cbblxdzoca50zuydh2ho","message":"test","voicePath":""}},{"uid":"nwdzakpk4gh8rjzv7hap","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"55","viewindex":0,"customId":"","helpInfo":{"helpId":"btck0fkho9g57384w3m8","message":"哈哈哈哈h 测试","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160630170405_icon_share.png"}},{"uid":"og4f30f260tmuxl1zyjg","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"111","viewindex":0,"customId":"","helpInfo":{"helpId":"g78f6eaob1y6ijnne433","message":"按钮11111111111111","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701140727_icon_setting.png"}},{"uid":"r1erdr9dm1ix32e17vrw","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"测试按钮","viewindex":0,"customId":"","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"r491lwq5yct19hnnjvxy","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"111","viewindex":0,"customId":"","helpInfo":{"helpId":"zjlwxu6oogabru9092ib","message":"","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160630170846_icon_share.png"}},{"uid":"svnxpqtblym7oqj9zjf7","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"444","viewindex":0,"customId":"","helpInfo":{"helpId":"vbbgkx5ch322wjp3dqds","message":"我是44444","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701091437_icon_setting.png"}},{"uid":"tcrw2z97oblev58ls9rf","controlName":"高级下拉列表","controlType":5,"locationMode":0,"locationData":"","controlValue":"highlisetview","title":"下拉","viewindex":1111,"customId":"111","helpInfo":{"helpId":"hzj0bgwsqiu0ez5a7ysx","message":"叼叼叼","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701140552_icon_share.png"}},{"uid":"tyjg9g4c2sxuqh64khre","controlName":"下拉列表","controlType":4,"locationMode":0,"locationData":"","controlValue":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"lr7pshocqe6shmhczoak","message":"哈哈哈哈 修改","voicePath":""}},{"uid":"vnpagqlihbrzq78h0tg6","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"hhh ","viewindex":-1,"customId":"","helpInfo":{"helpId":"6sg3z9z2xold8h1by5zo","message":"dd ","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701120351_icon_share.png"}},{"uid":"y96t6zuqug8ix1rm1pov","controlName":"按钮","controlType":1,"locationMode":0,"locationData":"","controlValue":"button","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"3hz9v3bf17i9xutf5ac4","message":"1","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701142747_icon_share.png"}}],"qaList":[{"qaId":"pehqbiap448fvtbsiv3r","question":"1","answer":"1","sort":1},{"qaId":"9jzaelpwln2w4wmhbqc6","question":"2","answer":"2","sort":2}]}
+     * data : {"helpList":[{"uid":"1bf3cnemitfy6dnlsfk8","controlName":"下拉列表","controlType":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"3c7ul173h753wvsrradd","message":"哈哈哈哈 修改","voicePath":""}},{"uid":"242nrr77zqy0p17uobyt","controlName":"下拉列表","controlType":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"1ik5femcd4pxseok06ja","message":"哈哈哈哈","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/Koala.jpg"}},{"uid":"3uhxjdza77x8vlvqkag6","controlName":"下拉列表","controlType":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"k8yyiv0ufyfy28vi29z4","message":"哈哈哈哈 修改","voicePath":""}},{"uid":"iighiz4322hxab3ch4rn","controlName":"按钮","controlType":"button","title":"新增库存","viewindex":0,"customId":"","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"mpb7harr82cad5lgeiwj","controlName":"按钮","controlType":"button","title":"我是谁","viewindex":-1,"customId":"","helpInfo":{"helpId":"cbblxdzoca50zuydh2ho","message":"test","voicePath":""}},{"uid":"nwdzakpk4gh8rjzv7hap","controlName":"按钮","controlType":"button","title":"55","viewindex":0,"customId":"","helpInfo":{"helpId":"btck0fkho9g57384w3m8","message":"哈哈哈哈h 测试","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160630170405_icon_share.png"}},{"uid":"og4f30f260tmuxl1zyjg","controlName":"按钮","controlType":"button","title":"111","viewindex":0,"customId":"","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"r1erdr9dm1ix32e17vrw","controlName":"按钮","controlType":"button","title":"测试按钮","viewindex":0,"customId":"","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"r491lwq5yct19hnnjvxy","controlName":"按钮","controlType":"button","title":"111","viewindex":0,"customId":"","helpInfo":{"helpId":"zjlwxu6oogabru9092ib","message":"","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160630170846_icon_share.png"}},{"uid":"svnxpqtblym7oqj9zjf7","controlName":"按钮","controlType":"button","title":"444","viewindex":0,"customId":"","helpInfo":{"helpId":"vbbgkx5ch322wjp3dqds","message":"我是44444","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701091437_icon_setting.png"}},{"uid":"tcrw2z97oblev58ls9rf","controlName":"高级下拉列表","controlType":"highlisetview","title":"下拉","viewindex":1111,"customId":"111","helpInfo":{"helpId":"","message":"","voicePath":""}},{"uid":"tyjg9g4c2sxuqh64khre","controlName":"下拉列表","controlType":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"lr7pshocqe6shmhczoak","message":"哈哈哈哈 修改","voicePath":""}},{"uid":"y96t6zuqug8ix1rm1pov","controlName":"下拉列表","controlType":"lisetview","title":"test","viewindex":0,"customId":"","helpInfo":{"helpId":"3hz9v3bf17i9xutf5ac4","message":"1","voicePath":""}}],"qaList":[{"qaId":"pehqbiap448fvtbsiv3r","question":"1","answer":"1","sort":1},{"qaId":"9jzaelpwln2w4wmhbqc6","question":"2","answer":"2","sort":2}]}
      */
 
     private String code;
@@ -43,14 +43,11 @@ public class HelpResponse {
         /**
          * uid : 1bf3cnemitfy6dnlsfk8
          * controlName : 下拉列表
-         * controlType : 4
-         * locationMode : 0
-         * locationData :
-         * controlValue : lisetview
+         * controlType : lisetview
          * title : test
          * viewindex : 0
          * customId :
-         * helpInfo : {"helpId":"3c7ul173h753wvsrradd","message":"哈哈哈哈 修改","voicePath":"http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701140839_icon_setting.png"}
+         * helpInfo : {"helpId":"3c7ul173h753wvsrradd","message":"哈哈哈哈 修改","voicePath":""}
          */
 
         private List<HelpListBean> helpList;
@@ -82,17 +79,14 @@ public class HelpResponse {
         public static class HelpListBean {
             private String uid;
             private String controlName;
-            private int controlType;
-            private int locationMode;
-            private String locationData;
-            private String controlValue;
+            private String controlType;
             private String title;
             private int viewindex;
             private String customId;
             /**
              * helpId : 3c7ul173h753wvsrradd
              * message : 哈哈哈哈 修改
-             * voicePath : http://192.168.1.31:8089/AppAssistWebservice/file/sound/20160701140839_icon_setting.png
+             * voicePath :
              */
 
             private HelpInfoBean helpInfo;
@@ -113,36 +107,12 @@ public class HelpResponse {
                 this.controlName = controlName;
             }
 
-            public int getControlType() {
+            public String getControlType() {
                 return controlType;
             }
 
-            public void setControlType(int controlType) {
+            public void setControlType(String controlType) {
                 this.controlType = controlType;
-            }
-
-            public int getLocationMode() {
-                return locationMode;
-            }
-
-            public void setLocationMode(int locationMode) {
-                this.locationMode = locationMode;
-            }
-
-            public String getLocationData() {
-                return locationData;
-            }
-
-            public void setLocationData(String locationData) {
-                this.locationData = locationData;
-            }
-
-            public String getControlValue() {
-                return controlValue;
-            }
-
-            public void setControlValue(String controlValue) {
-                this.controlValue = controlValue;
             }
 
             public String getTitle() {
