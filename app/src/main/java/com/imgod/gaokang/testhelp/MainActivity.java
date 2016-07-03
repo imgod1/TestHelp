@@ -1,25 +1,30 @@
 package com.imgod.gaokang.testhelp;
 
+import android.graphics.Color;
+import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.AbsoluteLayout;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.imgod.gaokang.testhelp.bean.HelpResponse;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+public class MainActivity extends AppCompatActivity {
+    List<View> viewList;
     public String helpContent;
     public HelpResponse helpResponse;
 
-    private ViewGroup parentViewGroup;
-    private TextView txt_title;
-    private Button btn_newadd;
-    private Button btn_newadd_stock;
+    private AbsoluteLayout parentViewGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +43,30 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
 //getWindow().getDecorView().getRootView();
-        parentViewGroup = (ViewGroup) findViewById(R.id.llayout_main);
-        Log.e("test", "共有多少view:" + parentViewGroup.getChildCount());
-        for (int i = 0; i < parentViewGroup.getChildCount(); i++) {
-            View view = parentViewGroup.getChildAt(i);
+        parentViewGroup = (AbsoluteLayout) findViewById(R.id.llayout_main);
 
+       viewList = getAllViewFromViewGroup(parentViewGroup);
+        Log.e("test", "共有多少view:" + viewList.size());
+//        for (int i = 0; i <viewList.size(); i++) {
+//            View view = viewList.get(i);
+//                if (view instanceof Button) {
+//                    Button button = (Button) view;
+//                    Log.e("test", "当前位置:" + i + "\t这是一个Button:title:" + button.getText() + "\tid:" + button.getId());
+//                } else if (view instanceof TextView) {
+//                    TextView textView = (TextView) view;
+//                    Log.e("test", "当前位置:" + i + "\t这是一个TextView:title:" + textView.getText() + "\tid:" + textView.getId());
+//                }
+//            int[] location = new int[2];
+//            view.getLocationOnScreen(location);
+//            Log.e("test", "当前位置:" + i + "坐标:x:" + location[0] + "y:" + location[1]);
+//        }
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        for (int i = 0; i <viewList.size(); i++) {
+            View view = viewList.get(i);
             if (view instanceof Button) {
                 Button button = (Button) view;
                 Log.e("test", "当前位置:" + i + "\t这是一个Button:title:" + button.getText() + "\tid:" + button.getId());
@@ -50,10 +74,44 @@ public class MainActivity extends AppCompatActivity {
                 TextView textView = (TextView) view;
                 Log.e("test", "当前位置:" + i + "\t这是一个TextView:title:" + textView.getText() + "\tid:" + textView.getId());
             }
-
             int[] location = new int[2];
             view.getLocationOnScreen(location);
+            Rect frame = new Rect();
+            getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+            int statusBarHeight = frame.top;
+            int contentTop = getWindow().findViewById(Window.ID_ANDROID_CONTENT).getTop();
+            Log.e("test", "当前位置:状态栏高度:"+statusBarHeight);
+            Log.e("test", "当前位置:标题栏高度:"+contentTop);
             Log.e("test", "当前位置:" + i + "坐标:x:" + location[0] + "y:" + location[1]);
+            Log.e("test", "当前位置:" + i + "坐标:x:" + view.getX() + "y:" + view.getY());
+            Log.e("test", "当前位置:" + i + "width::" + view.getWidth() + "height:" + view.getHeight());
+            Log.e("test", "当前位置:" + i + "getPaddingRight::" + view.getPaddingRight() + "getPaddingLeft:" + view.getPaddingLeft()+"getPaddingTop:" +view.getPaddingTop()+"getPaddingBottom:" +view.getPaddingBottom());
+
+            View helpView = new View(this);
+           ViewGroup.LayoutParams layoutParams =  helpView.getLayoutParams();
+            if(layoutParams!=null) {
+                Log.e("test","LayoutParams不为空");
+                layoutParams.width = view.getWidth();
+                layoutParams.height = view.getHeight();
+            } else {
+                AbsoluteLayout.LayoutParams test = new AbsoluteLayout.LayoutParams(view.getWidth(),view.getHeight(),location[0],location[1]-statusBarHeight-contentTop);
+                Log.e("test","LayoutParams为空");
+
+//                layoutParams= new ViewGroup.LayoutParams(view.getLayoutParams());
+//                layoutParams.width = view.getWidth();
+//                layoutParams.height = view.getHeight();
+                helpView.setLayoutParams(test);
+            }
+            final int test = i;
+            helpView.setBackgroundColor(Color.argb(0x22,0x00,0x00,0x00));
+                parentViewGroup.addView(helpView);
+                helpView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this,"Hello Click"+test,Toast.LENGTH_SHORT).show();
+                    }
+                });
+
         }
     }
 
@@ -64,8 +122,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        txt_title = (TextView) findViewById(R.id.txt_title);
-        btn_newadd = (Button) findViewById(R.id.btn_newadd);
-        btn_newadd_stock = (Button) findViewById(R.id.btn_newadd_stock);
     }
+
+    public List<View> getAllViewFromViewGroup(ViewGroup viewGroup){
+        List<View> viewList = new ArrayList<>();
+        for(int i=0;i<viewGroup.getChildCount();i++) {
+            View view = viewGroup.getChildAt(i);
+            if(view instanceof  ViewGroup) {
+                viewList.addAll(getAllViewFromViewGroup((ViewGroup) view));
+            } else {
+                viewList.add(view);
+            }
+        }
+        return viewList;
+    }
+
 }

@@ -1,27 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/llayout_main"
-    android:layout_width="match_parent"
+<AbsoluteLayout  android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.imgod.gaokang.testhelp.MainActivity">
+    android:id="@+id/llayout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
 
-    <TextView
-        android:id="@+id/txt_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="标题" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.imgod.gaokang.testhelp.MainActivity">
 
-    <Button
-        android:id="@+id/btn_newadd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="新增按钮" />
+        <TextView
+            android:id="@+id/btn_newadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增按钮" />
+        <TextView
+            android:id="@+id/btn_newadd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增按钮" />
 
-    <Button
-        android:id="@+id/btn_newadd_stock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="新增库存" />
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/btn_newadd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增按钮"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/btn_newadd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增按钮"
+                android:layout_alignParentLeft="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_newadd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增按钮"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentLeft="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</AbsoluteLayout>
