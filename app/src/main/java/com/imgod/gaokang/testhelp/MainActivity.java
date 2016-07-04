@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private AbsoluteLayout parentViewGroup;
 
     private Button btn_help;
-
+    private Button btn_showhelp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -160,6 +160,14 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("test", "还没有添加到屏幕上");
                     addHelpView2Screen();
                 }
+            }
+        });
+
+        btn_showhelp = (Button) findViewById(R.id.btn_showhelp);
+        btn_showhelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HelpInfoActivity.actionStart(MainActivity.this);
             }
         });
     }
