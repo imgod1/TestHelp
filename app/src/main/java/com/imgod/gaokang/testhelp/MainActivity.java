@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        for (int i = 0; i < viewList.size()-1; i++) {
+        for (int i = 0; i < viewList.size()-2; i++) {
             View view = viewList.get(i);
             if (view instanceof Button) {
                 Button button = (Button) view;

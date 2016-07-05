@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.imgod.gaokang.testhelp.HelpInfoActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="#f5f5f5"
+        >
+        <TextView
+            android:id="@+id/txt_help_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我是帮助信息我是帮助信息我是帮助信息我是帮助信息我是帮助信息我是帮助信息我是帮助信息我是帮助信息"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
 
 
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="center"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

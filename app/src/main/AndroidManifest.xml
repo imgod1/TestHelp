@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HelpInfoActivity"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:theme="@style/Dialog"></activity>
     </application>
 
 </manifest>
